@@ -36,3 +36,11 @@ Foo=bar
 - The content length of the first request includes the non-printable characters also.
 - The G is not consider or is left in the first request
 - Then It is send as part of the second request resulting in a  method GPOST.
+The second request received on the the server will look like:
+```
+GPOST / HTTP/2
+Host: 0a470001049308108199432d0002004f.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 7
+Foo=bar
+```
