@@ -17,5 +17,5 @@ Nmap done: 1 IP address (1 host up) scanned in 22.30 seconds
 
 - The port 5000 is open and running Gunicorn 20.0.4
 - visiting the website gives a code editor
-- some of the keywords are restricted in this like import, os, subprocess this prevent from accessing the shell.
-- there is an ability to save the code.
+- some of the keywords are restricted,  like import, os, subprocess this prevent from accessing the shell.
+- there are option to run and save the codes.
