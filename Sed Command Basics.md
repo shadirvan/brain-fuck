@@ -1,0 +1,6 @@
+- short for stream editor.
+- The command `sed 's/Pineapple/Feta' toppings.txt` searches for the word Pineapple and replaces it with Feta. But the original file is not modified.
+-  The `-i` option also make the changes to file instead of printing to the screen. `sed -i 's/Pineapple/Feta' toppings.txt`.
+- Here the `/` is used as a delimiter. You can change it to anything such as . , | etc
+- So if you want to just replace a text which contain / use other delimiter. for example in a file which contain paths of files in my system. if i want to remove the `/etc` i would use : `sed 's./etc..' paths.txt`
+- 

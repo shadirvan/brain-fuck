@@ -1,0 +1,10 @@
+ - awk is more of scripting lang than a command
+ - `awk '{command}'` usage: `awk '{print}' data.txt`
+ - To print only the first field only(contents inside the first column) use: `awk '{print $1}' data.txt`
+ - using `$0` instead of `$1` will print the entire file.
+ -  To print only the first and third field we can use `awk '{print $1,$3}' data.txt`
+ - as a use case `ls -l` give the details of files inside the directory such as it's permissions, owner, date, time, name,etc
+ - if we only want to see the files permissions  and their name we can pipe it to awk: `ls -l | awk '{print $1,$9}'` .
+ - awk see the space or tab space as a delimiter by default.
+ - `awk '{print $NF}' data.txt` prints what ever the content present in the last field.
+ - To change the delimiter to something like : or , use the command : `awk -F':' '{print $7}' /etc/passwd` since contents inside /etc/passwd is seperated by ':'.
