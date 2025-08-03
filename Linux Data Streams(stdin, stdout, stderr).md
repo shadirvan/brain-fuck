@@ -1,0 +1,8 @@
+- the `echo $?` gives the out 0,1 . 1 means the last command ended up in an error while 0 says it was successful.
+- A command could result could be successful, error or both.
+- in order to split the outputs we redirect it.
+- for example `find /etc -type f 2> /dev/null` redirects the errors into `/dev/null`. only the successful results are shown (no permission denied errors).
+- stdin has a number designation of 0. stdout : 1, stderr : 2
+- `find /etc -type f > result.txt` outputs the stdout to a file by default. and the standard errors are shown to the screen.
+- instead of `>` if we use `>>` the contents are appended instead of rewriting.
+- The redirection operator `&>` outputs both the stdin and stdout to a file to a single place.
