@@ -1,0 +1,9 @@
+- Global regular expression print.
+- `grep car` simple look for the word and print the line to screen.
+- `grep -v car` prints all the lines which doesn't contain the word `car`
+- grep can be used either as `cat data.txt | grep book'`  or `grep book data.txt`
+- the grep command with `-n` argument gives the line number.
+- `-c` give the count of the words.
+- `-i` not care about the case of the word.
+- `-r` recursively search through files.
+- Regular expressions can also be used with grep.
