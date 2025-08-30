@@ -8,4 +8,4 @@
 - `-r` recursively search through files.
 - `-E` to use extended regex followed by the regular expression.
 - Regular expressions can also be used with grep.
-- To learn how to use grep visit: https://regexone.com/
+- To learn how to use grep visit: https://regexone.com/ from here I can practice regex incase I forget about it.
