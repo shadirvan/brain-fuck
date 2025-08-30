@@ -1,0 +1,7 @@
+- The first key was where i looked first. the `robots.txt` path contains `key-1-of-3.txt` this is the path where the first key is present.
+- there is also dictionary file 
+- The file seems to be too long with a lot of entry.
+- The word list contains a lot of duplicate entries which is not the case for a word list. so i cat the `uniq` words to a new word list file.
+- using the `dirbuster` i got a new path for word press login `/wp-admin.php`
+- since the box is a Mr.robot theme i tried the login as Elliot . Now i need the correct  password.
+- 

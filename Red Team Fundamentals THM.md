@@ -108,3 +108,36 @@
 | **Red Team Operator** | Executes technical tasks. Follows engagement plans and performs specific assignments.         |
 
 - Role responsibilities vary by organization; structure shown is a common example.
+# 🔴 Red Team & Cyber Kill Chains
+
+## Overview
+- **Core Function**: Adversary emulation — simulate real-world attacker behaviors using their tools/methods.
+- **Purpose**: Assess how defenders respond to real attacks.
+- **Cyber Kill Chains**: Used by red and blue teams to map adversary TTPs (Tactics, Techniques, Procedures).
+
+## 🧰 Common Cyber Kill Chains
+
+| Kill Chain                  | Description                                |
+|----------------------------|--------------------------------------------|
+| **Lockheed Martin**        | Focuses on perimeter breaches; standardized |
+| **Unified Kill Chain**     | Covers both external and internal steps     |
+| **Varonis Kill Chain**     | Data-centric perspective                    |
+| **AD Attack Cycle**        | Specific to Active Directory environments   |
+| **MITRE ATT&CK Framework** | TTP-based matrix of real-world behaviors    |
+
+> 🔸 In this room, we reference **Lockheed Martin Cyber Kill Chain**, commonly used by both red and blue teams.
+> 🔹 Limitation: Focuses on **external breach**, not detailed on **internal movement**.
+
+---
+
+## 📌 Lockheed Martin Cyber Kill Chain
+
+| Technique           | Purpose                                              | Examples                              |
+|---------------------|------------------------------------------------------|----------------------------------------|
+| **Reconnaissance**  | Obtain information on the target                     | OSINT, harvesting emails               |
+| **Weaponization**   | Craft exploit + payload                              | Malicious DOCX with backdoor           |
+| **Delivery**        | Transmit the weapon to the victim                    | Email, USB, malicious websites         |
+| **Exploitation**    | Trigger the exploit on the victim system             | MS17-010, ZeroLogon                    |
+| **Installation**    | Install malware/tooling on target                    | Mimikatz, Rubeus                       |
+| **Command & Control** | Establish remote control over compromised systems | Empire, Cobalt Strike                  |
+| **Actions on Objectives** | Achieve final goal (e.g., exfiltration, impact) | Ransomware (Conti, LockBit2.0), etc.  |
