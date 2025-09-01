@@ -13,3 +13,12 @@
 - eg : `https://example.com/contact?filename=https://google.com/notes.txt`
 - The file is don't necessarily have to be mentioned in the url if it is an API driven application.
 - Burp can be used to intercept the traffic and repeat it.
+### SQL Injection
+- If we can execute malicious SQL code in a text field to obtain information that we not suppose to see that is called SQL Injection.
+- For eg in an app where we enter the username to obtain the email adress a output. We might be able to enter `jeremy' OR 1=1#` This might evaluate the SQL code as true and returns all the result.
+- `jeremy' union select null,null#` what this command is used is for identifying how many number of column is selected. Increase the number of null until a result is obtained.
+- if there is 3 columns being selected we do something like `jeremy' union select,select,version()#`. Which returns the version of the database.
+- we can see all the table names with `jeremy' union select,select,table_name from information_schema.tables#` 
+- Now the symbol # depends on the database we are using. It can also be -- - based on the database.
+- There is a cheat sheet available at : https://portswigger.net/web-security/sql-injection/cheat-sheet
+- 
