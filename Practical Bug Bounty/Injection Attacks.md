@@ -21,4 +21,19 @@
 - we can see all the table names with `jeremy' union select,select,table_name from information_schema.tables#` 
 - Now the symbol # depends on the database we are using. It can also be -- - based on the database.
 - There is a cheat sheet available at : https://portswigger.net/web-security/sql-injection/cheat-sheet
-- 
+### Blind SQL Injection 
+- There might be other injection points other than the input fields that are vulnerable to injection Attacks.
+- the parameter field of the post request maybe vulnerable
+- the session cookie field of the request maybe vulnerable.
+- we can use SQL map to test for vulnerabilities automatically.
+- we can automate the SQL vuln scanning by using sqlmap.
+- copy the request to a text file.
+- then use : `sqlmap -r req.txt`.
+- The vulnerability doesn't have to be on the post request. It can be on the get request which contain session cookies also.(SQL Injection when processing the cookie by server.)
+- Now this particular type injection doesn't return any data. 
+- But we can ask database questions like 'is the first letter of password is a'.
+- we substring function for this attack.
+- A simple example of this would be in the request: `Cookie : session=<session token> and substring(select version(),1,1) = '8'`.
+- What happens in the above request is that the first character of the version number is checked whether it's equal to '8'. If it is, the request get accepted and show the success request output.
+- To automate this we can use : `sqlmap -r req.txt --level=2 --dump`.
+- if we know the table name and only want to dump contents from that particular table we can use: `sqlmap -r req.txt --level=2 -T < table_name > --dump`.
