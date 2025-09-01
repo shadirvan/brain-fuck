@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grep Command.md",
+                "file": "Practical Bug Bounty/Injection Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Grep Command"
+              "title": "Injection Attacks"
             }
           }
         ]
@@ -145,6 +145,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -155,8 +156,11 @@
   },
   "active": "fe642a4d353c43d0",
   "lastOpenFiles": [
-    "HTTP Smuggling.md",
+    "Practical Bug Bounty/Reconnaissance and Information Gathering.md",
+    "Practical Bug Bounty/Injection Attacks.md",
+    "Practical Bug Bounty/Authentication and Authorization Attacks.md",
     "Grep Command.md",
+    "HTTP Smuggling.md",
     "Sed Command Basics.md"
   ]
 }
