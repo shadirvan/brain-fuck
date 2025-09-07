@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical Bug Bounty/Injection Attacks.md",
+                "file": "Practical Bug Bounty/Evasion Techniques.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Injection Attacks"
+              "title": "Evasion Techniques"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "HTTP Smuggling.md",
+            "file": "Practical Bug Bounty/Evasion Techniques.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -156,8 +156,9 @@
   },
   "active": "fe642a4d353c43d0",
   "lastOpenFiles": [
-    "Practical Bug Bounty/Reconnaissance and Information Gathering.md",
     "Practical Bug Bounty/Injection Attacks.md",
+    "Practical Bug Bounty/Evasion Techniques.md",
+    "Practical Bug Bounty/Reconnaissance and Information Gathering.md",
     "Practical Bug Bounty/Authentication and Authorization Attacks.md",
     "Grep Command.md",
     "HTTP Smuggling.md",
