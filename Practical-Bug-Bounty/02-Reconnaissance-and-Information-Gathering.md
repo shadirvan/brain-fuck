@@ -21,7 +21,7 @@
 - output this to a single file.
 - `httprobe` : check whether the subdomain is alive.
 - `cat example-subdomains.txt | grep example.com | sort -u | httprobe -prefer-https | grep https > example-alive.txt` : This piped command gives the the https domains that are alive.
-- `gowitness file -f example-alive.txt -P examplepics --no-http`: this command takes a screenshot of the pages. Also remember to remove the `https://` part from the live domains text file.
+- `gowitness scan file -f alive.txt --no-http`: this command takes a screenshot of the pages. Also remember to remove the `https://` part from the live domains text file. find and replace in mousepad can be used for this.
 ### Burp Suite
 - The history of requests can be seen in the `Target` tab next to dashboard tab.
 - The Scope section under it can be used to set the in scope and out scope domains.
