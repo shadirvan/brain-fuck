@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical Bug Bounty/Injection Attacks.md",
+                "file": "Practical-Bug-Bounty/05-Other-Common-Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Injection Attacks"
+              "title": "05-Other-Common-Vulnerabilities"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "HTTP Smuggling.md",
+            "file": "Practical Bug Bounty/Wrapping Up.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -156,9 +156,13 @@
   },
   "active": "fe642a4d353c43d0",
   "lastOpenFiles": [
-    "Practical Bug Bounty/Reconnaissance and Information Gathering.md",
-    "Practical Bug Bounty/Injection Attacks.md",
-    "Practical Bug Bounty/Authentication and Authorization Attacks.md",
+    "Practical-Bug-Bounty/07-Evasion-Techniques.md",
+    "Practical-Bug-Bounty/04-Injection-Attacks.md",
+    "Practical-Bug-Bounty/03-Authentication-and-Authorization-Attacks.md",
+    "Practical-Bug-Bounty/02-Reconnaissance-and-Information-Gathering.md",
+    "Practical-Bug-Bounty/05-Other-Common-Vulnerabilities.md",
+    "Practical-Bug-Bounty/01-Introduction.md",
+    "Practical-Bug-Bounty/08-Wrapping-Up.md",
     "Grep Command.md",
     "HTTP Smuggling.md",
     "Sed Command Basics.md"
