@@ -14,14 +14,14 @@
 - `OWASP DirBuster` : GUI based directory enumeration tool
 ### Subdomain Enumeration
 - in order to find the subdomain with google dorking use : `site:example.com -www` as search query. the `-www` remove the sites starts with that.
-- We can find subdomains using certificate search. go to `crt.sh` and search `%.example.com`
+- We can find subdomains using certificate search. go to `https://crt.sh/` and search `%.example.com`
 - `subfinder -d example.com` : tool used to find the subdomains.
 - `assetfinder example.com` : This finds assets related to the given domain. even assets related to sister companies.
 - `amass enum -d example.com` : this tool has lot of other capabilities also.
 - output this to a single file.
 - `httprobe` : check whether the subdomain is alive.
 - `cat example-subdomains.txt | grep example.com | sort -u | httprobe -prefer-https | grep https > example-alive.txt` : This piped command gives the the https domains that are alive.
-- `gowitness scan file -f alive.txt --no-http`: this command takes a screenshot of the pages. Also remember to remove the `https://` part from the live domains text file. find and replace in mousepad can be used for this.
+- `gowitness scan file -f domains.txt --no-http`: this command takes a screenshot of the pages. Also remember to remove the `https://` part from the live domains text file. find and replace in mousepad in Kali can be used for this.
 ### Burp Suite
 - The history of requests can be seen in the `Target` tab next to dashboard tab.
 - The Scope section under it can be used to set the in scope and out scope domains.

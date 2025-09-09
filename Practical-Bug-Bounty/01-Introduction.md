@@ -1,7 +1,7 @@
 ### Web Application security Standards
 - OWASP Top 10
 - Common Weakness Enumeration (CWE)
-- SANS TOP 25\
+- SANS TOP 25
 ### Website Security Testing
 - To get the header information about a website use :
 	`securityheaders.com`
