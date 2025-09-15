@@ -5,4 +5,4 @@
 - plan for what bugs you are looking for.
 - decide what severity bugs that you are looking for
 - Decide what industry you want to do the testing. Educational, Banking, or Health.
-- look for the time the bug Bounty program was added. Older listing might not have that much of bugs compared to the new listings
+- look for the time the bug Bounty program was added. Older listing might not have that much of bugs compared to the new listings.

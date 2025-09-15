@@ -4,7 +4,7 @@
 - add it to intruder
 - add a position
 - load a payload configuration (word list)
-- attack , the request with different length compared to the failed attempts likely be the password.
+- Start the Attack. Check The length of responses. The odd one might be the right word or password.
 #### FFUF
 - Copy the request to file by right clicking and selecting the option.
 - edit the request file and replace the password to `FUZZ` and save it.
@@ -36,5 +36,5 @@
 ### Broken Access Control
 - `jwt.io` decodes a encoded JWT token.
 - the token has three section each is base64 encoded.
-- Broken access control : if there is an API to login to accounts, another API to update account information, every time a person login he get a JWT token and   if a person can use his JWT token and modify other user account it is broken function level authorization.
+- Broken access control : if there is an API to login to accounts, another API to update account information, every time a person login he get a JWT token and  if a person can use his JWT token and modify other user account it is **broken function level authorization**.
 - burp suite has **autorise** extension which allows checking a request against BFLA by using the mentioned cookie in every request
