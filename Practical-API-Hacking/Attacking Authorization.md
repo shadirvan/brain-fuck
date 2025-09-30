@@ -1,0 +1,9 @@
+- Authorization is what you allowed to do.
+- If you can go to a website and you are logged in with your account the link is like /users?id=5 . if you change the url to something like /users?id=6 and it still returns information. then it is called Broken Object Level Authorization or BOLA.
+- If i on the same shop website case i can order on behalf of other user or modify contents only an admin could do  then it is called Broken Function Level Authorization or BFLA.
+- To demonstrate BOLA with crAPI :
+	- Login to get a vehicle id of our own. add the vehicle by using the id from the hog mail mail box.
+	- Use burp proxy to view the requests. The refresh location button send api requests to endpoint that look like this : `/identity/api/v2/vehicle/abfff941-fe5a-4f30-bcd9-792c551d7774/location`
+	- Go to the community tab . it sends request to the api community resulting in lot of data return as response. 
+	- Grab an id from the api and insert it on the location API to get the location of another users vehicle.
+- 
