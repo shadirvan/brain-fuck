@@ -1,4 +1,4 @@
-- Authorization is what you allowed to do.
+- Authentication is who you are. Authorization is what you allowed to do.
 - If you can go to a website and you are logged in with your account the link is like /users?id=5 . if you change the url to something like /users?id=6 and it still returns information. then it is called Broken Object Level Authorization or BOLA.
 - If i on the same shop website case i can order on behalf of other user or modify contents only an admin could do  then it is called Broken Function Level Authorization or BFLA.
 - To demonstrate BOLA with crAPI :
